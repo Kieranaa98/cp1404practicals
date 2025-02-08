@@ -11,7 +11,7 @@ def main():
     """Main function"""
     print(MENU)
     choice = input(">>> ").upper()
-    score = get_valid_score()
+    score = 0
 
     while choice != "Q":
         if choice == "G":
