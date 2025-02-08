@@ -10,6 +10,7 @@ EXCELLENT = 90
 PASSABLE = 50
 
 def main():
+    """Main function"""
     score = float(input("Enter score: "))
     print(get_result(score))
 
@@ -18,6 +19,7 @@ def main():
     print(get_result(random_score))
 
 def get_result(score):
+    """Determine score results"""
     if score < LOWEST_SCORE or score > HIGHEST_SCORE:
         return "Invalid score"
     elif score >= EXCELLENT:
