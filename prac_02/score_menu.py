@@ -8,6 +8,7 @@ EXCELLENT = 90
 PASSABLE = 50
 
 def main():
+    """Main function"""
     print(MENU)
     choice = input(">>> ").upper()
     score = int(input("Enter score: "))
@@ -27,10 +28,12 @@ def main():
     print("Thank you.")
 
 def get_valid_score(score):
+    """Get valid score"""
     if score < LOWEST_SCORE or score > HIGHEST_SCORE:
         return "Invalid score"
 
 def get_result(score):
+    """Determine the result of the score"""
     if score < LOWEST_SCORE or score > HIGHEST_SCORE:
         return "Invalid score"
     elif score >= EXCELLENT:
@@ -41,6 +44,7 @@ def get_result(score):
         return "Bad"
 
 def get_stars(score):
+    """Print the number of asterisks according to score"""
     print(f"{score * "*"}")
 
 
