@@ -25,7 +25,7 @@ def main():
 
 def get_celsius():
     """Convert fahrenheit to celsius"""
-    fahrenheit_option = float(input(("Fahrenheit: ")))
+    fahrenheit_option = float(input("Fahrenheit: "))
     celsius = 5 / 9 * (fahrenheit_option - 32)
     print(f"Result: {celsius:.2f} C")
 
