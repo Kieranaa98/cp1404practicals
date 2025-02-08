@@ -3,8 +3,11 @@ PASSWORD_LENGTH =10
 def main():
     password = get_password()
 
-    length = len(password)
+    get_asterisk(password)
 
+
+def get_asterisk(password):
+    length = len(password)
     print(f"{length * "*"}")
 
 
