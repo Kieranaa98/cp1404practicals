@@ -1,10 +1,13 @@
 PASSWORD_LENGTH =10
 
-password = input("Enter password: ")
-while len(password) <= PASSWORD_LENGTH:
-    print("Invalid Password")
+def main():
     password = input("Enter password: ")
+    while len(password) <= PASSWORD_LENGTH:
+        print("Invalid Password")
+        password = input("Enter password: ")
 
-length = len(password)
+    length = len(password)
 
-print(f"{length * "*"}")
+    print(f"{length * "*"}")
+
+main()
