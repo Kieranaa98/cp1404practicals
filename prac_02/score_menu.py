@@ -34,9 +34,7 @@ def get_valid_score(score):
 
 def get_result(score):
     """Determine the result of the score"""
-    if score < LOWEST_SCORE or score > HIGHEST_SCORE:
-        return "Invalid score"
-    elif score >= EXCELLENT:
+    if score >= EXCELLENT:
         return "Excellent"
     elif score >= PASSABLE:
         return "Passable"
