@@ -6,7 +6,7 @@ MAXIMUM = 45
 
 
 def main():
-    """Quick picks program"""
+    """Quick picks program."""
     number_of_quick_picks = int(input("How many quick picks? "))
     while number_of_quick_picks < 0:
         print("That makes no sense!")
@@ -18,7 +18,9 @@ def main():
             number = random.randint(MINIMUM, MAXIMUM)
             while number in quick_pick:
                 number = random.randint(MINIMUM, MAXIMUM)
-
+            quick_pick.append(number)
+        quick_pick.sort()
+        print(" ".join(f"{number:2}" for number in quick_pick))
 
 
 main()
