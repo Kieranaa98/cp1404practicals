@@ -29,12 +29,23 @@ print(a_names)
 # 'Ada Alan Angel Bob Jimi'
 print(" ".join(sorted(names)))
 
-# lowercase_full_names =
+#1.
+lowercase_full_names = [name.lower() for name in full_names]
+print(lowercase_full_names)
 
 almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
-# numbers =
+#2.
+numbers = [int(almost_number) for almost_number in almost_numbers]
+print(numbers)
 
-# greater than 9 from the numbers (not strings) you just created
+#3.
+big_numbers = [number for number in numbers if number > 9]
+print(big_numbers)
 
+#4.
 # to create a string (not list) of the last names for those full names longer than 11 characters
 # the result should be: 'Harlem, Hendrix, Lovelace'
+full_names = ['Alice Harlem', 'Jimi Hendrix', 'Grace Lovelace', 'John Doe', 'Sara Park']
+name = ', '.join([name.split()[-1] for name in full_names if len(name) > 11])
+
+print(name)
