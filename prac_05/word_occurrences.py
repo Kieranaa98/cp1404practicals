@@ -4,12 +4,6 @@ Estimate: 20 minutes
 Actual:   28 minutes
 """
 
-"""
-CP1404/CP5632 Practical - Suggested Solution
-Count word occurrences in a string
-This example is in the lecture notes 3 different ways
-"""
-
 word_to_count = {}
 text = input("Text: ")
 words = text.split()
