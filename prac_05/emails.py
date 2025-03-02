@@ -4,12 +4,6 @@ Estimate: 20 minutes
 Actual:   43 minutes
 """
 
-"""
-CP1404/CP5632 Practical - Suggested Solution
-Email to name dictionary
-"""
-
-
 def main():
     """Creating a dictionary of email IDs """
     email_to_name = {}
