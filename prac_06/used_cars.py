@@ -15,10 +15,15 @@ def main():
     limo = Car(100)
     limo.add_fuel(20)
 
-    print(f"Car has fuel: {my_car.fuel}")
-    print(my_car)
-    print(f"Limo has fuel: {limo.fuel}")
-    print(limo)
+cars = []
+c1 = Car("car",180)
+c2 = Car("limo",100)
+cars.append(c1)
+cars.append(c2)
 
+print(f"Car has fuel: {cars[0].fuel}")
+print(cars[0])
+print(f"Limo has fuel: {cars[1].fuel}")
+print(cars[1])
 
 main()
