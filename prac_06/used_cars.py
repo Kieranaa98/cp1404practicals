@@ -9,21 +9,16 @@ from prac_06.car import Car
 
 def main():
     """Demo test code to show how to use car class."""
-    my_car = Car(180)
+    my_car = Car("My car", 180)
     my_car.drive(30)
+    print(f"fuel: {my_car.fuel}")
+    print(my_car)
 
-    limo = Car(100)
+    limo = Car("Limo", 100)
     limo.add_fuel(20)
+    print(limo.fuel)
+    limo.drive(115)
+    print(limo)
 
-cars = []
-c1 = Car("car",180)
-c2 = Car("limo",100)
-cars.append(c1)
-cars.append(c2)
-
-print(f"Car has fuel: {cars[0].fuel}")
-print(cars[0])
-print(f"Limo has fuel: {cars[1].fuel}")
-print(cars[1])
 
 main()
