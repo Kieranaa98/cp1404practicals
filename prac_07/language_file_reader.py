@@ -29,7 +29,7 @@ def main():
         reflection = parts[2] == "Yes"
         pointer_arithmetic = parts[3] == "Yes"
 
-        language = ProgrammingLanguage(parts[0], parts[1], reflection, pointer_arithmetic, int(parts[4]))
+        language = ProgrammingLanguage(parts[0], parts[1], reflection, pointer_arithmetic, int(parts[3]))
 
         languages.append(language)
 
