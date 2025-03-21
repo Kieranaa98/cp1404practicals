@@ -13,7 +13,7 @@ def main():
 
     guitars.sort()
 
-    print("\nSorted Guitars (by year):")
+    print("\nGuitars (by year):")
     display_guitars(guitars)
 
 
