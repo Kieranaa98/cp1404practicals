@@ -2,18 +2,14 @@ import datetime
 import csv
 from project import Project
 
+MENU = ("- (L)oad projects""\n- (S)ave projects""\n- (D)isplay projects""\n- (F)ilter projects by date""\n- (A)dd new project""\n- (U)pdate project""\n- (Q)uit")
+
+
 def main():
     print("Welcome to Pythonic Project Management")
     projects = load_projects()
-    menu = """- (L)oad projects  
-- (S)ave projects  
-- (D)isplay projects  
-- (F)ilter projects by date
-- (A)dd new project  
-- (U)pdate project
-- (Q)uit"""
     while True:
-        print(menu)
+        print(MENU)
         choice = input(">>> ").lower()
         if choice == 'l':
             filename = input("Filename: ")
