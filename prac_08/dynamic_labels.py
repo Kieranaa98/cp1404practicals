@@ -8,17 +8,17 @@ class DynamicLabelsApp(App):
     def __init__(self, **kwargs):
         """Initialize the app with a list of names."""
         super().__init__(**kwargs)
-        self.names = ["Alice", "Bob", "Charlie", "David", "Eve"]  # List of names
+        self.names = ["Alice", "Bob", "Charlie", "David", "Eve"]
 
     def build(self):
         """Load the Kivy file and return the root widget."""
-        self.root = Builder.load_file('dynamic_widgets.kv')
+        self.root = Builder.load_file('dynamic_labels.kv')
         return self.root
 
     def on_start(self):
         """Dynamically create labels for each name in the list."""
-        main_layout = self.root.ids.main  # Get reference to BoxLayout with id 'main'
+        main_layout = self.root.ids.main
         for name in self.names:
-            main_layout.add_widget(Label(text=name))  # Add a Label for each name
+            main_layout.add_widget(Label(text=name))
 
 DynamicLabelsApp().run()
