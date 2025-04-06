@@ -6,7 +6,7 @@ MENU = "q)uit, c)hoose taxi, d)rive"
 
 
 def main():
-    """Simulates a taxi fare system where users can choose a taxi, drive it, and track their total bill until they quit."""
+    """Simulates a taxi fare system where users can choose a taxi, drive it, and track their total bill until they quit"""
     total_bill = 0
     taxis = [Taxi("Prius", 100), SilverServiceTaxi("Limo", 100, 2),
              SilverServiceTaxi("Hummer", 200, 4)]
