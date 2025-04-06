@@ -1,5 +1,5 @@
 class Band:
-    """Band class to manage a collection of Musicians."""
+    """Band class to manage a collection of Musicians"""
 
     def __init__(self, name):
         """Initialise a Band with a name and an empty list of musicians."""
