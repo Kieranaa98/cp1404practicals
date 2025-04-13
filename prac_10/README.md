@@ -54,7 +54,7 @@ He was able to properly format the menu bar options well with the help of the /n
 
 ### Regarding the **practical tasks** overall, what would you change if you were in charge of the subject?
 
-Nothing really just maybe a bit more teaching on online classes besides going through answers would be good
+The grading system shouldnt be so strict that one mistake causes 25% gone.
 
 ### What did you do really well for practicals in this subject?
 
